@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title></title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft10{font-size:37px;font-family:Times;color:#000000;}
+	.ft11{font-size:15px;font-family:Times;color:#000000;}
+	.ft12{font-size:15px;font-family:Times;color:#333333;}
+	.ft13{font-size:19px;font-family:Times;color:#000000;}
+	.ft14{font-size:37px;font-family:Times;color:#333333;}
+	.ft15{font-size:-1px;font-family:Helvetica;color:#000000;}
+	.ft16{font-size:15px;line-height:19px;font-family:Times;color:#333333;}
+	table {
+	  font-family: arial, sans-serif;
+	  border-collapse: collapse;
+	}
+
+	td, th {
+	  border: 1px solid #dddddd;
+	  text-align: left;
+	  padding: 8px;
+	}
+	th {
+		background-color: #dddddd;
+		padding: 12px;
+	}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF">
+<div id="page1-div" style="position:relative;width:892px; margin: auto">
+	<hr />
+	<img style="position:absolute;top:65px;left:15px;width: 300px;"  src="https://www.codefire.org/sites/all/themes/codefire/img/logo.png" />
+	<p style="position:absolute;top:65px;left:547px;white-space:nowrap" class="ft10"><b>TAX INVOICE</b></p>
+	<p style="position:absolute;top:171px;left:15px;white-space:nowrap" class="ft11"><b>BILL FROM</b></p>
+	<p style="position:absolute;top:191px;left:15px;white-space:nowrap" class="ft16">{{email}}</p>
+	<p style="position:absolute;top:251px;left:15px;white-space:nowrap" class="ft11"><b>BILL TO</b></p>
+	<p style="position:absolute;top:271px;left:15px;white-space:nowrap" class="ft16">Codeprove.com</p>
+	<p style="position:absolute;top:350px;left:15px;white-space:nowrap" class="ft11"><b>FOR</b></p>
+	<p style="position:absolute;top:370px;left:15px;white-space:nowrap" class="ft12">Services on Codeprove.com</p>
+	<p style="position:absolute;top:171px;left:581px;white-space:nowrap" class="ft11"><b>INVOICE #</b></p>
+	<p style="position:absolute;top:191px;left:581px;white-space:nowrap" class="ft12">{{invoice_number}}</p>
+	<p style="position:absolute;top:171px;left:722px;white-space:nowrap" class="ft11"><b>CURRENCY</b></p>
+	<p style="position:absolute;top:191px;left:722px;white-space:nowrap" class="ft12">INR</p>
+	<p style="position:absolute;top:231px;left:581px;white-space:nowrap" class="ft11"><b>DATE</b></p>
+	<p style="position:absolute;top:251px;left:581px;white-space:nowrap" class="ft16">{{date}}<br/>&#160;</p>
+
+	<hr style="position: relative; top: 300px" />
+	<table style="position: relative; top: 400px; width: 100%">
+		<tr>
+			<th class="ft13">Description</th>
+			<th class="ft13">Amount</th>
+		</tr>
+		<tr>
+			<td class="ft16">{{description}} (INR)</td>
+			<td class="ft16">₹{{pay_amount}}</td>
+		</tr>
+	</table>
+	<table style="margin-top: 500px; float: right">
+		<tr>
+			<th class="ft13">Total</th>
+			<th class="ft13">₹{{pay_amount}}</th>
+		</tr>
+	</table>
+	<hr style="position: relative; top: 20px; width: 100%" />
+</div>
+</body>
+</html>

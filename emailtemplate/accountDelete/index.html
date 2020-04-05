@@ -1,0 +1,198 @@
+<html>
+	<head>
+		<style>
+			body {
+				width: 90%;
+				margin: auto;
+			}
+			.header {
+				background: rgb(0, 183, 255);
+				padding: 10px;
+
+			}
+			.verify-button {
+				background: rgb(1, 158, 67);
+				color: white;
+				padding: 10px;
+				border-radius: 5px;
+				text-decoration: none;
+				font-size: 14px;
+				font-weight: bold;
+				margin: 30px 0px 160px;
+			}
+			.verify-button:hover {
+				cursor: pointer;
+				background: rgb(61, 211, 123);
+			}
+			.bolder {
+				color:#404040;
+				font-size: 16px;
+				margin: 20px 0px;
+				line-height:20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div style="font-family: Helvetica, Arial, sans-serif, serif, EmojiFont; background-color: rgb(240, 240, 240);">
+				<table align="center" height="100%" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#f0f0f0">
+					<tbody>
+						<tr>
+							<td>
+								<table width="690" align="center" border="0" cellspacing="0" cellpadding="0">
+									<tbody>
+										<tr style="background-color:#f0f0f0">
+											<td width="100%" align="center"><a href="http://localhost:3000/email_confirm/{{email}}" target="_blank" rel="noopener noreferrer" data-auth="NotApplicable"><img data-imagetype="External" src="./Mail - shen zheng - Outlook_files/logo_300.png" alt="Freelancer" width="150" border="0" style="display:block; padding:30px"></a></td>
+										</tr>
+										<tr>
+											<td width="100%" align="center">
+												<table width="690" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" align="center">
+													<tbody>
+														<tr>
+															<td width="100%" align="center" style="color:#0E1724; text-align:left; font-family:Helvetica,Arial,sans-serif; font-size:16px; line-height:28px">
+																<table width="690" cellspacing="0" cellpadding="0" border="0" align="center">
+																	<tbody>
+																		<tr>
+																			<td height="30"></td>
+																		</tr>
+																		<tr>
+																			<td colspan="3" style="padding:0; margin:0; font-size:1; line-height:0">
+																				<h2 style="color:#404040; font-size:22px; font-weight:bold; line-height:26px; padding:0px 30px; margin:0">
+																				Hi {{username}}, </h2>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</td>
+														</tr>
+														<tr>
+															<td align="center" width="100%">
+																<table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+																	<tbody>
+																		<tr bgcolor="#ffffff">
+																			<td width="30"></td>
+																		<td>
+																			<table width="630" align="center" border="0" cellspacing="0" cellpadding="0">
+																				<tbody>
+																					<tr>
+																						<td colspan="3" height="20"></td>
+																					</tr>
+																					<tr>
+																						<td colspan="3">
+																							<p style="color:#404040; font-size:16px; line-height:20px; padding:0; margin:0">Do you want to delete your account from this site?
+                                                                                            </p>
+                                                                                            <p style="color:#404040; font-size:16px; line-height:20px; padding:0; margin:0">From the security of your account, you should verify your email with this verification code.</p>
+																						</td>
+																					</tr>
+																					<tr>
+																						<td colspan="3" height="20"></td>
+																					</tr>
+																					<tr>
+																						<td>
+																							<table style="font-family:Arial,sans-serif; -webkit-border-radius:2px; -moz-border-radius:2px; border-radius:2px; height:50px; width: 100%">
+																								<tbody>
+																									<tr>
+																										<td align="center" style="padding:10px 20px; margin:0; font-family:Arial,Helvetica,sans-serif; font-size:16px; line-height:1em; text-align: center;">
+                                                                                                            <h2 style="color:#404040; font-size:22px; font-weight:bold; line-height:26px; padding:0px 30px; margin:0">
+                                                                                                            {{code}} </h2>
+																									</tr>
+																								</tbody>
+																							</table>
+																						</td>
+																					</tr>
+																					<tr>
+																						<td>
+																							<p style="color:#404040; font-size:16px; line-height:20px; padding:0; margin:0">If you have any issues confirming your email, we will be happy to help you. You can contact us on
+																							<a href="mailto:support@classnow.net" target="_blank" rel="noopener noreferrer" data-auth="NotApplicable" style="color:#0070bf; font-weight:bold">
+																							support@classnow.net</a>. </p>
+																						</td>
+																					</tr>
+																					<tr>
+																						<td colspan="3" height="40" style="padding:0; margin:0; font-size:1; line-height:0">
+																						</td>
+																					</tr>
+																				</tbody>
+																			</table>
+																		</td>
+																		<td width="30" bgcolor="#ffffff"></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												<table width="690" cellspacing="0" cellpadding="0" bgcolor="#ffffff" border="0" align="center">
+													<tbody>
+														<tr>
+															<td>
+																<div style="font-size:18px; line-height:20px; padding:0px 30px">Regards,</div>
+																<div style="font-size:18px; line-height:26px; font-weight:bold; padding:0px 30px">
+																The Classnow Team </div>
+															</td>
+														</tr>
+														<tr>
+															<td height="30"></td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table align="center" width="690" border="0" cellspacing="0" cellpadding="0" bgcolor="#f0f0f0">
+					<tbody>
+						<tr>
+							<td height="24"></td>
+						</tr>
+						<tr>
+							<td align="center">© 2019 Classnow Technology Pty Limited. All Rights Reserved.
+							<br>
+							Level 20, 680 George Street, Sydney, NSW 2000, Australia </td>
+						</tr>
+						<tr>
+							<td width="100%" height="8"></td>
+						</tr>
+						<tr>
+							<td align="center"><span style="text-decoration: none; font-family: Helvetica, Arial, sans-serif, serif, EmojiFont; color: rgb(117, 120, 125); font-size: 12px; line-height: 18px;"><a href="https://www.freelancer.com/page.php?p=info%2Fprivacy&amp;uniqid=40072052-38749-5d8ec109-748ad268&amp;linkid=2" target="_blank" rel="noopener noreferrer" data-auth="NotApplicable" style="color:#75787D; text-decoration:underline; font-family:Helvetica,Arial,sans-serif">Privacy
+							Policy</a> | <a href="https://www.freelancer.com/page.php?p=info%2Fterms&amp;uniqid=40072052-38749-5d8ec109-748ad268&amp;linkid=3" target="_blank" rel="noopener noreferrer" data-auth="NotApplicable" style="color:#75787D; text-decoration:underline; font-family:Helvetica,Arial,sans-serif">
+							Terms and Conditions</a> | <a href="https://www.freelancer.com/users/email/subscriptions.php?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkZyZWVsYW5jZXJcXEdBRlxcQ29yZVxcSldUXFxKV1QifQ.eyJpZCI6IjQwMDcyMDUyIiwic3ViIjoidW5zdWJzY3JpYmUiLCJpYXQiOjE1Njk2MzY2MTd9.z-i_9RiltQVYV5JEkvDNewrDOYVkXTFrFGxlB_95zU4&amp;type=marketing&amp;utm_campaign=employer_signup&amp;utm_medium=email&amp;utm_source=post_project_funnel&amp;utm_content=unsubscribe&amp;target_setting=staff_message&amp;uniqid=40072052-38749-5d8ec109-748ad268&amp;linkid=4" target="_blank" rel="noopener noreferrer" data-auth="NotApplicable" style="color:#75787D; text-decoration:underline; font-family:Helvetica,Arial,sans-serif">
+							Unsubscribe</a> | <a href="https://www.freelancer.com/support?uniqid=40072052-38749-5d8ec109-748ad268&amp;linkid=5" target="_blank" rel="noopener noreferrer" data-auth="NotApplicable" style="color:#75787D; text-decoration:underline; font-family:Helvetica,Arial,sans-serif">
+							Get Support</a> | <a href="https://www.freelancer.com/give?from=email_footer&amp;uniqid=40072052-38749-5d8ec109-748ad268&amp;linkid=6" target="_blank" rel="noopener noreferrer" data-auth="NotApplicable" style="color:#75787D; text-decoration:underline; font-family:Helvetica,Arial,sans-serif">
+							Get Free Credit</a></span></td>
+						</tr>
+						<tr>
+							<td width="100%" height="16"></td>
+						</tr>
+						<tr>
+							<td width="100%" align="center">
+								<table width="auto" cellspacing="0" cellpadding="0" border="0" align="center">
+									<tbody>
+									<tr>
+										<td><a href="https://www.facebook.com/fansoffreelancer" target="_blank" rel="noopener noreferrer" data-auth="NotApplicable"><img data-imagetype="External" src="./Mail - shen zheng - Outlook_files/19bacfd0c58e6a35b841790d89354564.png" alt="Facebook" width="24" border="0"></a>&nbsp;
+											<a href="https://twitter.com/freelancer" target="_blank" rel="noopener noreferrer" data-auth="NotApplicable">
+											<img data-imagetype="External" src="./Mail - shen zheng - Outlook_files/cf858d8bbdf01f6d8f3a7f3ecb08f266.png" alt="Twitter" width="24" border="0"></a>&nbsp;
+											<a href="https://www.instagram.com/freelancerofficial" target="_blank" rel="noopener noreferrer" data-auth="NotApplicable">
+											<img data-imagetype="External" src="./Mail - shen zheng - Outlook_files/7517195fa748ffb4ccc210202e644d7d.png" alt="Instagram" width="24" border="0"></a>&nbsp;
+										</td>
+										<td width="16"></td>
+										<td><a href="https://bnc.lt/edm-download-freelancer" target="_blank" rel="noopener noreferrer" data-auth="NotApplicable" style="text-decoration:none; color:#75787D; font-size:12px; line-height:18px; font-family:Helvetica,Arial,sans-serif">Download our mobile
+										app</a></td>
+										<td width="4"></td>
+										<td><a href="https://bnc.lt/edm-download-freelancer" target="_blank" rel="noopener noreferrer" data-auth="NotApplicable" style="color:#75787D; text-decoration:none"><img data-imagetype="External" src="./Mail - shen zheng - Outlook_files/b98e76935f88dac4cbd67e14f237d7cc.png" width="38" border="0" style="display:inline"></a></td>
+									</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td height="24"></td>
+						</tr>
+					</tbody>
+				</table>
+		</div>
+	</body>
+</html>

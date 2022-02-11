@@ -21,7 +21,7 @@
     "express-session": "^1.17.0",
     "fs": "0.0.1-security",
     "glot-api": "^0.1.0",
-    "handlebars": "^4.7.6",
+    "handlebars": "^4.7.7",
     "he-sdk-nodejs": "^0.1.0",
     "html-pdf": "^2.2.0",
     "jsonwebtoken": "^8.5.1",
